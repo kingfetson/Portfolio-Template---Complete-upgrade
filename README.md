@@ -3,7 +3,7 @@
 
 A modern, conversion-focused website for a premium plumbing service business in Nairobi, Kenya. Designed to generate leads through calls, WhatsApp messages, and form submissions with a high-end, professional UI.
 
-![Website Preview](./images/preview.png)
+![Website Preview](./preview.png)
 
 ---
 

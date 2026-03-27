@@ -4,7 +4,7 @@
 const portfolioConfig = {
     // ===== PERSONAL INFORMATION =====
     personal: {
-        name: "Your Name",
+        name: "Insert Your Name",
         firstName: "Your",
         lastName: "Name",
         title: "Frontend Developer",

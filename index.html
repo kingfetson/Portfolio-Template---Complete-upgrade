@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio">
+    <!-- Load config FIRST, then other scripts -->
+    <script src="config.js"></script>
+    <title>Your Name | Professional Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-code"></i> <span class="logo-name">Your Name</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero container" id="about">
+        <div class="hero-content">
+            <span class="section-label" id="hero-title">Your Title Here</span>
+            <h1 id="hero-tagline">Turning complex problems into <span class="highlight">elegant solutions.</span></h1>
+            <p id="hero-description">I'm a [Your Role] based in [Your Location], specializing in [Your Specialties].</p>
+            
+            <div class="hero-stats" id="hero-stats">
+                <!-- Stats will be inserted by JavaScript -->
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Profile Image">
+            <div class="badge" id="availability-badge">
+                <i class="fas fa-award"></i>
+                <div>
+                    <p>Available for Work</p>
+                    <span>Open to Opportunities</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What I Do</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+            </div>
+
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects-section container" id="projects">
+        <div class="section-header">
+            <span class="section-label">My Work</span>
+            <h2 class="section-title">Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+            <!-- Projects will be inserted by JavaScript -->
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="container contact-box">
+            <h2>Let's Work Together</h2>
+            <p>I'm currently open to new opportunities. Whether you have a question or just want to say hi, I'll do my best to get back to you!</p>
+            <a href="mailto:your.email@example.com" class="btn btn-light" id="contact-email">Send Me an Email</a>
+
+            <div class="social-links" id="social-links">
+                <!-- Social links will be inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year">2024</span> <span class="footer-name">Your Name</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- PROJECT MODAL -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <h2 id="modal-title">Project Title</h2>
+                    <div class="modal-tools" id="modal-tools"></div>
+                </div>
+                <p id="modal-desc" class="modal-desc">Project description will appear here.</p>
+                
+                <div class="modal-metrics">
+                    <div class="metric-box">
+                        <h4 id="modal-metric1">0</h4>
+                        <p>Metric 1</p>
+                    </div>
+                    <div class="metric-box">
+                        <h4 id="modal-metric2">0</h4>
+                        <p>Metric 2</p>
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <a href="#" id="modal-github-btn" target="_blank" class="btn">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    <a href="#" id="modal-live-btn" target="_blank" class="btn btn-outline">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load script AFTER config -->
+    <script src="script.js"></script>
+</body>
+</html>
